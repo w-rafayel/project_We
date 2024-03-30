@@ -1,1 +1,38 @@
 @charset "utf-8";
+
+/* base: service、project、intro、build 共用 ============ */
+
+.base {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.base-head, .base-btns {
+    text-align: center;
+}
+
+.base-body {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.base-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+.base-btn {
+    border: solid 2px #cf7688;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #cf7688;
+    text-transform: uppercase;
+    display: inline-block;
+    transition-duration: .3s;
+}
+
+.base-btn:hover {
+    background-color: #f6cdd5;
+}
