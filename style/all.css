@@ -1,1 +1,77 @@
 @charset "utf-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, "微軟正黑體",sans-serif;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+/* helper ============================================== */
+
+.container {
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* header ============================================== */
+
+.header {
+    /* background-color: salmon; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-head, .header-body, .header-foot {
+    padding: .5rem 1rem;
+    box-sizing: border-box;
+}
+
+.header-btn-xmark, .header-foot {
+    display: none;
+}
+
+.header-head {
+    /* background-color: rosybrown; */
+    width: 80px;
+}
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-ul {
+    /* background-color: gainsboro; */
+    display: flex;
+    padding: .5rem 1rem;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 30px;
+}
+
+.header-li {
+    margin: 0 1rem;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition-duration: .3s;
+}
+
+.header-link:hover {
+    color: #cf7688;
+}
