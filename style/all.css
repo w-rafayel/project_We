@@ -82,6 +82,22 @@ img {
 .banner {
     background-image: linear-gradient(135deg, #cf7688 20%, #f5ba54 100%);
     color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+}
+
+.banner-index .banner-head, .banner-index .banner-body {
+    padding-top: 3rem;
+}
+
+.banner-index .banner-head {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.banner-index .banner-body {
+    width: 60%;
+    position: relative;
 }
 
 .banner-container {
@@ -125,4 +141,66 @@ img {
     font-weight: 600;
     text-transform: uppercase;
     color: rgba(255, 255, 255, .3);
+}
+
+.banner-ul-order1 {
+    order: -1;
+}
+
+.banner-li + .banner-li {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.banner-li + .banner-li::before {
+    content: "";
+    position: absolute;
+    top: 0.4rem;
+    left: -0.6rem;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.banner-btns {
+    margin-top: 2rem;
+}
+
+.banner-btn {
+    border: solid 2px #fff;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    transition-duration: .3s;
+}
+
+.banner-btn:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-img-mobile, .banner-img-pad {
+    position: absolute;
+}
+
+.banner-img-desktop {
+    margin-left: 4.5rem;
+}
+
+.banner-img-mobile {
+    left: 0;
+    bottom: 5rem;
+    z-index: 1;
+}
+
+.banner-img-pad {
+    right: 1rem;
+    bottom: -2rem;
 }
