@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* card ================================================= */
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.card-head {
+    text-align: center;
+}
+
+.card-icon {
+    border: dashed 1px #cf7688;
+    margin-bottom: 2rem;
+    width: 5rem;
+    display: inline-block;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    color: #cf7688;
+    border-radius: 50%;
+    transition-duration: .3s;
+}
+
+.card:hover .card-icon {
+    background-color: #cf7688;
+    color: #fff;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-desc {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.card-ul {
+    margin-left: 1.5rem;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
