@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* process ============================================ */
+
+.process-item {
+    display: flex;
+}
+
+.process-head {
+    background-color: #ddd;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .3s;
+}
+
+.process-item:hover .process-head {
+    background-color: #cf7688;
+}
+
+.process-body {
+    background-color: #fff;
+    width: 70%;
+}
+
+.process-item + .process-item {
+    margin-top: 2rem;
+}
+
+.process-cht,
+.process-en {
+    color: rgba(255, 255, 255, .7);
+    display: block;
+}
+
+.process-cht {
+    font-size: 2.5rem;
+}
+
+.process-en {
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    text-transform: uppercase;
+}
+
+.process-ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.process-li {
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.process-li::marker {
+    color: #cf7688;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.process-li:nth-child(n+3) {
+    padding-top: 0;
+}
+
+.process-title {
+    color: #cf7688;
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: inline;
+}
+
+.process-desc {
+    margin-top: .5rem;
+    color: rgba(0, 0, 0, .7);
+    line-height: 1.5;
+}
