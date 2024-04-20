@@ -9,9 +9,6 @@
 .process-head {
     background-color: #ddd;
     width: 30%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
