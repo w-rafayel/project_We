@@ -307,3 +307,35 @@ img {
 .aside-link-top {
     font-size: 3rem;
 }
+
+/* RWD ================================================== */
+
+@media screen and (max-width: 480px) {
+    .header {
+        background-color: rgba(255, 255, 255, .7);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .05);
+    }
+
+    .header-body {
+        display: none;
+    }
+
+    .header-foot {
+        display: block;
+    }
+
+    .header-img-logo {
+        opacity: .5;
+    }
+
+    .header-btn {
+        font-size: 2rem;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+    .header-btn-bars {
+        color: rgba(0, 0, 0, .5);
+    }
+}

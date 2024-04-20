@@ -208,3 +208,68 @@
 .build-li-3 {
     background-color: #cf7688;
 }
+
+/* animation ============================================ */
+
+.ani-move-downToUp,
+.ani-fadeIn-leftToRight {
+    animation-fill-mode: forwards;
+}
+
+.ani-move-downToUp {
+    animation-name: moveDownToUp;
+    animation-duration: .5s;
+    transform: translateY(120%);
+}
+
+.ani-fadeIn-leftToRight {
+    animation-name: fadeInLeftToRight;
+    animation-duration: 1s;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+@keyframes moveDownToUp {
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes fadeInLeftToRight {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.ani-delay-1 {
+    animation-delay: .3s;
+}
+
+.ani-delay-2 {
+    animation-delay: .5s;
+}
+
+.ani-delay-3 {
+    animation-delay: .9s;
+}
+
+.ani-delay-4 {
+    animation-delay: 1s;
+}
+
+.ani-delay-5 {
+    animation-delay: 1.2s;
+}
+
+.ani-delay-6 {
+    animation-delay: 1.3s;
+}
+
+.ani-delay-7 {
+    animation-delay: 1.4s;
+}
+
+.ani-delay-8 {
+    animation-delay: 1.5s;
+}
