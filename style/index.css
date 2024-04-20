@@ -7,6 +7,11 @@
     padding-bottom: 5rem;
 }
 
+.base-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 .base-head, .base-btns {
     text-align: center;
 }
