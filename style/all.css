@@ -308,6 +308,12 @@ img {
     font-size: 3rem;
 }
 
+/* addClass ============================================= */
+
+.we-no-scroll {
+    overflow: hidden;
+}
+
 /* RWD ================================================== */
 
 @media screen and (max-width: 480px) {
